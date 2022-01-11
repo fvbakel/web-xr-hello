@@ -102,26 +102,26 @@ class App {
       new THREE.MeshBasicMaterial({ color: 0x00ffff }),
       new THREE.MeshBasicMaterial({ color: 0xffff00 })
     ];
-    if (window.sunflower) {
+//    if (window.sunflower) {
 
-      const box = new THREE.Mesh(new THREE.BoxBufferGeometry(0.2, 0.2, 0.2), materials);
+      const box = new THREE.Mesh(new THREE.BoxBufferGeometry(0.4, 0.4, 0.4), materials);
       box.position.copy(this.reticle.position);
       this.scene.add(box)
 
-      const clone = window.sunflower.clone();
+  /*     const clone = window.sunflower.clone();
       clone.position.copy(this.reticle.position);
       this.scene.add(clone)
 
      // const shadowMesh = this.scene.children.find(c => c.name === 'shadowMesh');
      // shadowMesh.position.y = clone.position.y;
-    } else {
+   } else {
 
       const box = new THREE.Mesh(new THREE.BoxBufferGeometry(0.4, 0.4, 0.4), materials);
       box.position.copy(this.reticle.position);
       this.scene.add(box)
     }
   }
-
+*/
   /**
    * Called on the XRSession's requestAnimationFrame.
    * Called with the time and XRPresentationFrame.
