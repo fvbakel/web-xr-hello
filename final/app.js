@@ -102,12 +102,12 @@ class App {
       new THREE.MeshBasicMaterial({ color: 0x00ffff }),
       new THREE.MeshBasicMaterial({ color: 0xffff00 })
     ];
-//    if (window.sunflower) {
+    if (window.sunflower) {
 
       const box = new THREE.Mesh(new THREE.BoxBufferGeometry(0.4, 0.4, 0.4), materials);
       box.position.copy(this.reticle.position);
       this.scene.add(box)
-
+    }
   /*     const clone = window.sunflower.clone();
       clone.position.copy(this.reticle.position);
       this.scene.add(clone)
