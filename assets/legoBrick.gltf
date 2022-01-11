@@ -399,24 +399,6 @@
             "target": 34962
         }
     ],
-    "materials" : [
-        {
-            "emissiveFactor" : [
-                0,
-                0,
-                0
-            ],
-            "name" : "None",
-            "pbrMetallicRoughness" : {
-                "baseColorTexture" : {
-                    "index" : 0,
-                    "texCoord" : 0
-                },
-                "metallicFactor" : 0,
-                "roughnessFactor" : 1
-            }
-        }
-    ],
     "meshes": [
         {
             "primitives": [
@@ -440,8 +422,7 @@
                     "mode": 4
                 }
             ],
-            "name": "",
-            "material" : 0
+            "name": ""
         },
         {
             "primitives": [

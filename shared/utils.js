@@ -35,6 +35,11 @@ window.gltfLoader.load("https://fvbakel.github.io/web-xr-hello/assets/legoBrick.
 //window.gltfLoader.load("https://immersive-web.github.io/webxr-samples/media/gltf/sunflower/sunflower.gltf", function(gltf) {
  //const flower = gltf.scene.children.find(c => c.name === 'Cube_Cube.001')
  //flower.castShadow = true;
+ var model = gltf.scene;
+ var newMaterial = new THREE.MeshStandardMaterial({color: 0xff0000});
+ model.traverse((o) => {
+   if (o.isMesh) o.material = newMaterial;
+ }); 
   window.sunflower = gltf.scene;
 });
 
