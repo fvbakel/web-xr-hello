@@ -104,23 +104,20 @@ class App {
     ];
     if (window.sunflower) {
 
-      const box = new THREE.Mesh(new THREE.BoxBufferGeometry(0.4, 0.4, 0.4), materials);
+   /*   const box = new THREE.Mesh(new THREE.BoxBufferGeometry(0.4, 0.4, 0.4), materials);
       box.position.copy(this.reticle.position);
       this.scene.add(box)
-    }
-  /*     const clone = window.sunflower.clone();
+      */
+      const clone = window.sunflower.clone();
       clone.position.copy(this.reticle.position);
       this.scene.add(clone)
 
      // const shadowMesh = this.scene.children.find(c => c.name === 'shadowMesh');
      // shadowMesh.position.y = clone.position.y;
-   } else {
-
-      const box = new THREE.Mesh(new THREE.BoxBufferGeometry(0.4, 0.4, 0.4), materials);
-      box.position.copy(this.reticle.position);
-      this.scene.add(box)
+    } else {
+      alert("Model is not loaded!")
     }
-    */
+
   }
 
   /**
