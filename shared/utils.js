@@ -22,9 +22,8 @@ window.gltfLoader = new THREE.GLTFLoader();
 class Reticle extends THREE.Object3D {
   constructor() {
     super();
-
     this.loader = new THREE.GLTFLoader();
-    this.loader.load("https://immersive-web.github.io/webxr-samples/media/gltf/reticle/reticle.gltf", (gltf) => {
+      this.loader.load("https://immersive-web.github.io/webxr-samples/media/gltf/reticle/reticle.gltf", (gltf) => {
       this.add(gltf.scene);
     })
 
@@ -32,9 +31,11 @@ class Reticle extends THREE.Object3D {
   }
 }
 
-window.gltfLoader.load("https://immersive-web.github.io/webxr-samples/media/gltf/sunflower/sunflower.gltf", function(gltf) {
-  const flower = gltf.scene.children.find(c => c.name === 'sunflower')
-  flower.castShadow = true;
+//this.loader.load("https://fvbakel.github.io/web-xr-hello/assets/legoBrick.gltf", (gltf) => {
+window.gltfLoader.load("https://fvbakel.github.io/web-xr-hello/assets/legoBrick.gltf", function(gltf) {
+//window.gltfLoader.load("https://immersive-web.github.io/webxr-samples/media/gltf/sunflower/sunflower.gltf", function(gltf) {
+ //const flower = gltf.scene.children.find(c => c.name === 'sunflower')
+ // flower.castShadow = true;
   window.sunflower = gltf.scene;
 });
 
@@ -127,4 +128,4 @@ window.DemoUtils = {
  */
 function onNoXRDevice() {
   document.body.classList.add('unsupported');
-}
+}s
