@@ -99,8 +99,20 @@ class App {
       clone.position.copy(this.reticle.position);
       this.scene.add(clone)
 
-      const shadowMesh = this.scene.children.find(c => c.name === 'shadowMesh');
-      shadowMesh.position.y = clone.position.y;
+     // const shadowMesh = this.scene.children.find(c => c.name === 'shadowMesh');
+     // shadowMesh.position.y = clone.position.y;
+    } else {
+      const materials = [
+        new THREE.MeshBasicMaterial({ color: 0xff0000 }),
+        new THREE.MeshBasicMaterial({ color: 0x0000ff }),
+        new THREE.MeshBasicMaterial({ color: 0x00ff00 }),
+        new THREE.MeshBasicMaterial({ color: 0xff00ff }),
+        new THREE.MeshBasicMaterial({ color: 0x00ffff }),
+        new THREE.MeshBasicMaterial({ color: 0xffff00 })
+      ];
+      const box = new THREE.Mesh(new THREE.BoxBufferGeometry(0.2, 0.2, 0.2), materials);
+      box.position.copy(this.reticle.position);
+      this.scene.add(box)
     }
   }
 

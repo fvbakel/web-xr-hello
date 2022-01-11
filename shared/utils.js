@@ -35,7 +35,6 @@ window.gltfLoader.load("https://fvbakel.github.io/web-xr-hello/assets/legoBrick.
 //window.gltfLoader.load("https://immersive-web.github.io/webxr-samples/media/gltf/sunflower/sunflower.gltf", function(gltf) {
  //const flower = gltf.scene.children.find(c => c.name === 'Cube_Cube.001')
  //flower.castShadow = true;
- alert(gltf.scene)
   window.sunflower = gltf.scene;
 });
 
