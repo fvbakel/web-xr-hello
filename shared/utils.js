@@ -41,7 +41,8 @@ window.gltfLoader.load("https://fvbakel.github.io/web-xr-hello/assets/legoBrick.
    if (o.isMesh) o.material = newMaterial;
  }); 
  */
-  gltf.scene.scale.set(.001*gltf.scene.scale.x, .001*gltf.scene.scale.y, .001 * gltf.scene.scale.z)
+  //gltf.scene.scale.set(.001*gltf.scene.scale.x, .001*gltf.scene.scale.y, .001 * gltf.scene.scale.z)
+  gltf.scene.scale.multiplyScalar(1 / 1000);
   window.sunflower = gltf.scene;
 });
 
