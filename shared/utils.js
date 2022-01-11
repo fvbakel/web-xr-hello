@@ -36,10 +36,12 @@ window.gltfLoader.load("https://fvbakel.github.io/web-xr-hello/assets/legoBrick.
  //const flower = gltf.scene.children.find(c => c.name === 'Cube_Cube.001')
  //flower.castShadow = true;
  var model = gltf.scene;
- var newMaterial = new THREE.MeshStandardMaterial({color: 0xff0000});
+ /*var newMaterial = new THREE.MeshStandardMaterial({color: 0xff0000});
  model.traverse((o) => {
    if (o.isMesh) o.material = newMaterial;
  }); 
+ */
+  gltf.scene.scale.set(.001*gltf.scene.scale.x, .001*gltf.scene.scale.y, .001 * gltf.scene.scale.z)
   window.sunflower = gltf.scene;
 });
 
