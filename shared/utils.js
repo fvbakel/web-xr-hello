@@ -127,4 +127,4 @@ window.DemoUtils = {
  */
 function onNoXRDevice() {
   document.body.classList.add('unsupported');
-}s
+}
