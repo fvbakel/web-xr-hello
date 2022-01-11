@@ -120,8 +120,9 @@ class App {
       box.position.copy(this.reticle.position);
       this.scene.add(box)
     }
+    */
   }
-*/
+
   /**
    * Called on the XRSession's requestAnimationFrame.
    * Called with the time and XRPresentationFrame.
