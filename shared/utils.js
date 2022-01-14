@@ -14,6 +14,10 @@
  */
 
 window.gltfLoader = new THREE.GLTFLoader();
+window.model_1="https://fvbakel.github.io/web-xr-hello/assets/2x4x3.gltf";
+window.model_2="https://fvbakel.github.io/web-xr-hello/assets/000.00002.gltf";
+window.model_3="https://fvbakel.github.io/web-xr-hello/assets/000.00003.gltf";
+
 /**
  * The Reticle class creates an object that repeatedly calls
  * `xrSession.requestHitTest()` to render a ring along a found
@@ -31,7 +35,8 @@ class Reticle extends THREE.Object3D {
   }
 }
 
-window.gltfLoader.load("https://fvbakel.github.io/web-xr-hello/assets/2x4x3.gltf", function(gltf) {
+window.gltfLoader.load(window.model_2, function(gltf) {
+//window.gltfLoader.load("https://fvbakel.github.io/web-xr-hello/assets/2x4x3.gltf", function(gltf) {
 //window.gltfLoader.load("https://immersive-web.github.io/webxr-samples/media/gltf/sunflower/sunflower.gltf", function(gltf) {
  //const flower = gltf.scene.children.find(c => c.name === 'Cube_Cube.001')
  //flower.castShadow = true;
@@ -43,6 +48,7 @@ window.gltfLoader.load("https://fvbakel.github.io/web-xr-hello/assets/2x4x3.gltf
  */
   //gltf.scene.scale.set(.001*gltf.scene.scale.x, .001*gltf.scene.scale.y, .001 * gltf.scene.scale.z)
   gltf.scene.scale.multiplyScalar(1 / 1000);
+  flower.castShadow = true;
   window.sunflower = gltf.scene;
 });
 
