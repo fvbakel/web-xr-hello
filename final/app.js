@@ -112,6 +112,7 @@ class App {
       clone.position.copy(this.reticle.position);
       this.scene.add(clone)
 
+      this.reticle.visible = false;
      // const shadowMesh = this.scene.children.find(c => c.name === 'shadowMesh');
      // shadowMesh.position.y = clone.position.y;
     } else {
