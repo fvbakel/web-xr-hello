@@ -35,7 +35,7 @@ class Reticle extends THREE.Object3D {
   }
 }
 
-window.gltfLoader.load(window.model_2, function(gltf) {
+window.gltfLoader.load("https://fvbakel.github.io/web-xr-hello/assets/000.00002.gltf", function(gltf) {
 //window.gltfLoader.load("https://fvbakel.github.io/web-xr-hello/assets/2x4x3.gltf", function(gltf) {
 //window.gltfLoader.load("https://immersive-web.github.io/webxr-samples/media/gltf/sunflower/sunflower.gltf", function(gltf) {
  //const flower = gltf.scene.children.find(c => c.name === 'Cube_Cube.001')
