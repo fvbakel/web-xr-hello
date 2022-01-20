@@ -21,3 +21,9 @@ This is a work in progress. If you find a mistake or have a suggestion, please [
 * [The sample code](https://github.com/googlecodelabs/ar-with-webxr/archive/refs/heads/master.zip)
 * A text editor
 * Basic knowledge of HTML, CSS, JavaScript, and Chrome DevTools
+
+
+## Extra tips
+
+Run a https server local:
+https://stackoverflow.com/questions/43677457/how-to-create-a-https-server-on-localhost
